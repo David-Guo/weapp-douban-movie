@@ -1,0 +1,34 @@
+
+.warp-list {
+  margin-top: 20px;
+  padding: 100rpx 0;
+}
+
+.warp-item {
+  display: inline-block;
+  align-items: center;
+  width: 34%;
+  margin-left: 10%;
+  margin-right: 4%
+}
+
+.warp-item image {
+  width: 120px;
+  height: 168px;
+  
+}
+
+.word-title {
+  flex: 1;
+  font-size: 10px;
+  font-weight: bold;
+  white-space: nowrap;
+  margin: 10% 0;
+}
+
+.word-rating {
+  font-size: 10px;
+  color:#f74c31;
+  margin: 10% 0;
+}
+

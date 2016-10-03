@@ -1,0 +1,14 @@
+<view class="container">
+  <view bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+
+  </view>
+  <view class="infohead">电影</view>
+  <view class="infolist" wx:for="{{infoList}}">
+    <view class="infoitem">{{item.text}}</view>
+  </view>
+  <view class="infohead">其他</view>
+  <view   bindtap="bindViewTap" class="infolist" wx:for="{{other}}">
+    <view  class="infoitem">{{item.text}}</view>
+  </view>
+</view>

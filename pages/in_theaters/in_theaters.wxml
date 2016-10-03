@@ -1,0 +1,14 @@
+<view class="warp-list">
+    <block wx:for="{{filmlist}}">
+        <view bindtap="viewDetail" id="{{item.id}}" class="warp-item">
+            <image src="{{item.images.medium}}"></image>
+            <view class="word">
+                <view class="word-title">{{item.title}}</view>
+                <view class="word-rating">
+                    <view wx:if="{{item.rating.average == 0}}">暂无评分</view>
+                    <view wx:else>{{item.rating.average}}</view>
+                </view>
+            </view>
+        </view>
+    </block>
+</view>

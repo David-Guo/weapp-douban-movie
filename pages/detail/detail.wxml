@@ -1,0 +1,52 @@
+
+<view class="head">
+  <view class="head-image">
+    <image src="{{film.images.small}}"></image>
+  </view>
+  <view class="info">
+    <view class="year">
+      <text class="label">年代：</text>
+      <text>{{film.year}}</text>
+    </view>
+    <view class="rating">
+      <view wx:if="{{film.rating.average == 0}}">
+        <text>暂无评分</text>
+      </view>
+      <view wx:else>
+        <text>{{film.rating.average}} ({{film.ratings_count}}人评分)</text>
+      </view>
+    </view>
+    <view class="genres">
+      <text class="label">类型：</text>
+      <text>{{film.genres}}</text>
+    </view>
+    <view class="country">
+      <text class="label">国家：</text>
+      <text>{{film.countries}}</text>
+    </view>
+  </view>
+</view>
+<view class="todo">
+  <view class="want-left">
+    <text>我想看</text>
+  </view>
+  <view class="want-right">
+    <text>看过了</text>
+  </view>
+</view>
+<view class="content">{{film.summary}}</view>
+<view class="casts">
+  <block wx:for="{{film.directors}}">
+    <view class="avatars">
+      <image src="{{item.avatars.small}}"></image>
+      <view class="name">{{item.name}}（导演）</view>
+    </view>
+  </block>
+  <block wx:for="{{film.casts}}">
+    <view class="avatars">
+      <image src="{{item.avatars.small}}"></image>
+      <view class="name">{{item.name}}</view>
+    </view>
+  </block>
+</view>
+

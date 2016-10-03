@@ -1,0 +1,72 @@
+
+
+.head {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.head image {
+  width: 128px;
+  height: 180px;
+}
+
+.info {
+  padding-left: 10px;
+}
+
+text {
+  font-size: 15px;
+}
+
+.todo {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  
+}
+
+.want-left{
+  padding-left: 62px;
+  padding-right: 62px;
+  background: #efefef;
+
+}
+
+.want-right{
+  margin-left: 10px;
+  padding-left: 62px;
+  padding-right: 62px;
+  background: #efefef;
+}
+
+.content{
+  font-size: 15px;
+  text-indent: 2em;
+  margin: 10px;
+  background: #efefef;
+  margin-top: 25px;
+}
+
+.casts{
+  padding-top: 10px;
+}
+
+.avatars {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  background: #F2f2f2;
+}
+
+.avatars image {
+  width: 70px;
+  height: 80px;
+}
+
+.name{
+  align-items: center;
+  font-size: 15px;
+  padding-left: 10px;
+  padding-top: 30px;
+}

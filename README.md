@@ -2,7 +2,7 @@
 
 使用豆瓣电影API，仿照豆瓣电影Andorid App 写的一个微信小程序，下载项目，使用微信提供的IDE打开即可看到效果，如下：
 
-![image/view.gif](image/view.gif)
+![images/view.gif](images/view.gif)
 
 ## TODO
 
